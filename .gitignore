@@ -1,3 +1,4 @@
 /data/var/www/*
+!/data/var/www/.gitkeep
 /data/var/lib/*
 !/data/var/lib/.gitkeep
