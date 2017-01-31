@@ -1,2 +1,3 @@
 /data/var/www/*
-/data/var/lib/mysql/*
+/data/var/lib/*
+!/data/var/lib/.gitkeep
