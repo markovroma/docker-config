@@ -24,4 +24,4 @@ services:
   fpm:
     extends:
       file: common-services.yml
-      service: php5.5-fpm
+      service: php7.1-fpm
