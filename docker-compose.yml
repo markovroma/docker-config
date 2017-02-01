@@ -19,6 +19,7 @@ services:
       - "443:443"
     volumes:
       - ./data/var/www/:/var/www/html/
+      - ./data/var/log/nginx:/var/log/nginx
     links:
       - fpm
   fpm:
