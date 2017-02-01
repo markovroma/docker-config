@@ -21,18 +21,11 @@ services:
     volumes:
       - ./data/var/www/:/var/www/html/
     links:
-      - php5.5-fpm:fpm 
-  php5.5-fpm:
-    build: ./containers/php5.5-fpm
-    container_name: php5.5-fpm
+      - php7.1-fpm:fpm
+  php7.1-fpm:
+    build: ./containers/php7.1-fpm
+    container_name: php7.1-fpm
     volumes:
       - ./data/var/www/:/var/www/html/
     ports:
       - "9000:9000"
-  #php7.1-fpm:
-  #  build: ./containers/php7.1-fpm
-  #  container_name: php7.1-fpm
-  #  volumes:
-  #    - ./data/var/www/:/var/www/html/
-  #  ports:
-  #    - "9000:9000"
