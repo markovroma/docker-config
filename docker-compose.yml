@@ -13,8 +13,7 @@ services:
       MYSQL_PASSWORD: "ca"
       MYSQL_ROOT_PASSWORD: "root" 
   nginx:
-    build: ./containers/nginx
-    container_name: nginx
+    image: rmarkov/nginx:ca
     ports:
       - "80:80"
       - "443:443"
@@ -25,4 +24,4 @@ services:
   fpm:
     extends:
       file: common-services.yml
-      service: php5.5-fpm
+      service: php7.1-fpm
