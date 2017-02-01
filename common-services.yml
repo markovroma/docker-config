@@ -1,0 +1,14 @@
+version: '2'
+services:
+  php7.1-fpm:
+    image: rmarkov/fpm:7.1
+    volumes:
+      - ./data/var/www/:/var/www/html/
+    ports:
+      - "9000:9000"
+  php5.5-fpm:
+    image: rmarkov/fpm:5.5
+    volumes:
+      - ./data/var/www/:/var/www/html/
+    ports:
+      - "9000:9000"
